@@ -1,6 +1,10 @@
 Vue 3.0 初学入门使用
 ===================
 
+## 视频链接(Youtube)
+
+https://www.youtube.com/playlist?list=PLliocbKHJNwuozzzF3gWnRjVOrX1tA9k5
+
 ## 课程详细
 
 01. 课程介绍
