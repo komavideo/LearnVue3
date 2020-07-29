@@ -10,6 +10,7 @@ https://www.youtube.com/playlist?list=PLliocbKHJNwuozzzF3gWnRjVOrX1tA9k5
 01. 课程介绍
 02. Vue3的安装
 03. v-bind绑定数据
+04. v-on实现事件处理
 
 ## 课程文件
 
