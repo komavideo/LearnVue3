@@ -14,6 +14,7 @@ https://www.youtube.com/playlist?list=PLliocbKHJNwuozzzF3gWnRjVOrX1tA9k5
 05. v-model双向绑定
 06. v-if控制显示条件
 07. v-for循环一个数组
+08. app.component自定义组件
 
 ## 课程文件
 
