@@ -12,6 +12,7 @@ https://www.youtube.com/playlist?list=PLliocbKHJNwuozzzF3gWnRjVOrX1tA9k5
 03. v-bind绑定数据
 04. v-on实现事件处理
 05. v-model双向绑定
+06. v-if控制显示条件
 
 ## 课程文件
 
