@@ -16,6 +16,7 @@ https://www.youtube.com/playlist?list=PLliocbKHJNwuozzzF3gWnRjVOrX1tA9k5
 07. v-for循环一个数组
 08. app.component自定义组件
 09. Vue对象实例
+10. Vue实例的生命周期
 
 ## 课程文件
 

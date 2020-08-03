@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue 3.0 - 小马技术</title>
+    <script src="https://unpkg.com/vue@next"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous"> 
+</head>
+<body>
+    <div id="hello-vue" class="m-3 p-3 border border-success">
+        {{ x + y }}
+    </div>
+    <script>
+        Vue.createApp({/* options */
+            data() {
+                return {
+                    x: 10,
+                    y: 20,
+                }
+            },
+            created() {
+                // 组件生成时
+                console.log('x + y is: ' + (this.x + this.y))
+            }
+        }).mount('#hello-vue')
+    </script>
+</body>
+</html>
