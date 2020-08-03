@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue 3.0 - 小马技术</title>
+    <script src="https://unpkg.com/vue@next"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous"> 
+</head>
+<body>
+    <div id="hello-vue" class="m-3 p-3 border border-success">
+        {{ a }}
+    </div>
+    <script>
+        // 定义自己的数据对象
+        const myData = { a: 10 }
+        const vm = Vue.createApp({/* options */
+            data() {
+                // App返回自定义的数据对象
+                return myData
+            }
+        }).mount('#hello-vue')
+        // 打印数据
+        console.log(vm.a)
+        console.log(vm.$data)
+        console.log(myData)
+        // 改变数据的值
+        vm.a = 100
+        console.log(vm.a)
+        console.log(vm.$data) // Vue实例属性
+        console.log(myData)
+    </script>
+</body>
+</html>
