@@ -18,6 +18,7 @@ https://www.youtube.com/playlist?list=PLliocbKHJNwuozzzF3gWnRjVOrX1tA9k5
 09. Vue对象实例
 10. Vue实例的生命周期
 11. 模版语法
+12. 简化v-bind和v-on
 
 ## 课程文件
 
