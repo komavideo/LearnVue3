@@ -17,6 +17,7 @@ https://www.youtube.com/playlist?list=PLliocbKHJNwuozzzF3gWnRjVOrX1tA9k5
 08. app.component自定义组件
 09. Vue对象实例
 10. Vue实例的生命周期
+11. 模版语法
 
 ## 课程文件
 
