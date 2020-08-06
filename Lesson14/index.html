@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue 3.0 - 小马技术</title>
+    <script src="https://unpkg.com/vue@next"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous"> 
+</head>
+<body>
+    <div id="hello-vue" class="m-3 p-3 border border-success">
+        <h3>{{this.x}} + {{this.y}} = {{this.result}}</h3>
+        <button @click="this.result=100" class="btn btn-success">重新设定 x, y</button>
+    </div>
+    <script>
+        Vue.createApp({/* options */
+            data() {
+                return {
+                    x: 10,
+                    y: 20
+                }
+            },
+            computed: {
+                result: {
+                    // getter
+                    get() {
+                        return this.x + this.y
+                    },
+                    // setter
+                    set(newValue) {
+                        this.x = newValue - 30
+                        this.y = 30
+                    }
+                }
+            }
+        }).mount('#hello-vue')
+    </script>
+</body>
+</html>
