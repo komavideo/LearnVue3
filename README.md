@@ -23,6 +23,7 @@ https://www.youtube.com/playlist?list=PLliocbKHJNwuozzzF3gWnRjVOrX1tA9k5
 14. 计算属性(setter)
 15. 计算属性与函数的区别
 16. 观察者属性
+17. 样式单绑定
 
 ## 课程文件
 
