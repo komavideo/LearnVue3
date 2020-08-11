@@ -21,6 +21,7 @@ https://www.youtube.com/playlist?list=PLliocbKHJNwuozzzF3gWnRjVOrX1tA9k5
 12. 简化v-bind和v-on
 13. 计算属性(getter)
 14. 计算属性(setter)
+15. 计算属性与函数的区别
 
 ## 课程文件
 

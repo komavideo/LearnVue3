@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue 3.0 - 小马技术</title>
+    <script src="https://unpkg.com/vue@next"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous"> 
+</head>
+<body>
+    <div id="hello-vue" class="m-3 p-3 border border-success">
+        <h2>{{ msg }} / {{ this.getResult() }}</h2>
+        <h3>result: {{this.result}} / {{ this.getDateTime() }}</h3>
+        <button @click="btnClick()" class="btn btn-success">一个按钮</button>
+    </div>
+    <script>
+        Vue.createApp({
+            /* options */
+            data() {
+                return {
+                    msg: "i love u."
+                }
+            },
+            computed: {
+                result() {
+                    // return this.msg
+                    return this.getDateTime()
+                }
+            },
+            methods: {
+                getResult() {
+                    return this.msg
+                },
+                getDateTime() {
+                    now = new Date()
+                    return "00:" + now.getMinutes() + ":" + now.getSeconds()
+                },
+                btnClick() {
+                    console.log("this.result:", this.result)
+                    console.log("this.getDateTime():", this.getDateTime())
+                }
+            }
+        }).mount('#hello-vue')
+    </script>
+</body>
+</html>
