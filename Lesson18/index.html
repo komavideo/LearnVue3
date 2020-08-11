@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue 3.0 - 小马技术</title>
+    <script src="https://unpkg.com/vue@next"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous"> 
+</head>
+<body>
+    <div id="hello-vue" class="m-3 p-3 border border-success">
+        <div v-if="isLoveGame" class="display-5 text-primary">一定要买 PS5.</div>
+        <div v-else class="display-5 text-success">好好学习，天天向上。</div>
+        <hr>
+        <template v-if="isLoveGame">
+            <h3>必买游戏</h3>
+            <ol>
+                <li>塞伯朋克2077</li>
+                <li>文明7</li>
+                <li>街头霸王6</li>
+            </ol>
+        </template>
+        <hr>
+        <div v-if="this.playedYears >= 10" class="display-5">资深玩家</div>
+        <div v-else-if="this.playedYears >= 5" class="display-5">老玩家</div>
+        <div v-else-if="this.playedYears >= 2" class="display-5">入门级</div>
+        <div v-else class="display-5">菜鸟一枚</div>
+    </div>
+    <script>
+        Vue.createApp({
+            /* options */
+            data() {
+                return {
+                    isLoveGame: true,
+                    playedYears: 1,
+                }
+            },
+            methods: {}
+        }).mount('#hello-vue')
+    </script>
+</body>
+</html>
