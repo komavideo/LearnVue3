@@ -26,6 +26,7 @@ https://www.youtube.com/playlist?list=PLliocbKHJNwuozzzF3gWnRjVOrX1tA9k5
 17. 样式单绑定
 18. 条件渲染
 19. v-for渲染
+20. v-for综合例
 
 ## 课程文件
 
