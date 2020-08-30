@@ -28,6 +28,7 @@ https://www.youtube.com/playlist?list=PLliocbKHJNwuozzzF3gWnRjVOrX1tA9k5
 19. v-for渲染
 20. v-for综合例
 21. 事件处理
+22. 事件的多处理
 
 ## 课程文件
 
