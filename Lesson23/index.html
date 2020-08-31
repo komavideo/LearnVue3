@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue 3.0 - 小马技术</title>
+    <script src="https://unpkg.com/vue@next"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous"> 
+</head>
+<body>
+    <div id="hello-vue" class="m-3 p-3 border border-success">
+        <h2>表单演示(阻止提交)</h2>
+        <form @submit.prevent>
+        <!-- <form> -->
+            <label for="new-todo">添加预定：</label>
+            <input v-model="newTodoText" id="new-todo" placeholder="例:一起吃鸡" />
+            <button @click="btnAddTodo()">添加</button>
+            <ul>
+                <li v-for="todo in todos">{{todo}}</li>
+            </ul>
+        </form>
+    </div>
+    <script>
+        const app = Vue.createApp({
+            /* options */
+            data() {
+                return {
+                    newTodoText: '',
+                    todos: []
+                }
+            },
+            methods: {
+                btnAddTodo() {
+                    // if (event) {
+                    //     // 阻止事件发生
+                    //     event.preventDefault()
+                    // }
+                    this.todos.push(this.newTodoText)
+                    this.newTodoText = ""
+                },
+                noSubmit() {
+                    console.log("noSubmit")
+                }
+            }
+        })
+        app.mount('#hello-vue')
+    </script>
+</body>
+</html>
